@@ -54,7 +54,11 @@
 typedef u_int8_t BYTE;		/* must be 1 byte unsigned value */
 typedef u_int16_t UINT;		/* must be 2 byte unsigned value */
 typedef u_int32_t ULONG;	/* must be 4 byte unsigned value */
-typedef u_int64_t ULLONG;	/* must be 8 byte unsigned value */
+#if defined(__sgi)
+  typedef uintmax_t ULLONG;	/* must be 8 byte unsigned value */
+#else
+  typedef u_int64_t ULLONG;
+#endif /* __sgi */
 
 #endif /* HASH_MACROS */
 
