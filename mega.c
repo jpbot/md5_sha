@@ -48,5 +48,5 @@ main(int argc, char *argv[])
     for (i=0; i < 1000000/50; ++i) {
 	write(1, "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", 50);
     }
-    exit(0);
+    return 0; /* exit(0); */
 }

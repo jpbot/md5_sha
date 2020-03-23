@@ -68,5 +68,5 @@ main(int argc, char *argv[])
 	fprintf(stderr, "Unknown int Byte Order, set BYTE_ORDER in Makefile\n");
 	exit(2);
     }
-    exit(0);
+    return 0; /* exit(0); */
 }

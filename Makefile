@@ -107,7 +107,8 @@ CC= cc
 OPT_DEBUG= -O3 -g3
 #OPT_DEBUG= -O3 -g3 -DDEBUG
 
-CFLAGS= ${OPT_DEBUG} -Wall -W
+CFLAGS= ${OPT_DEBUG} -Wall
+#CFLAGS= ${OPT_DEBUG} -Wall -W
 #CFLAGS= ${OPT_DEBUG} -Wall -W -Werror
 
 # Some architectures such as Sparc do not allow one to access long that

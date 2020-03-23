@@ -64,7 +64,7 @@ main(int argc, char *argv[])
     /* force alignment */
     printf("#define MUST_ALIGN\n");
 #endif
-    exit(0);
+    return 0; /* exit(0); */
 }
 
 

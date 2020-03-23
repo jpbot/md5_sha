@@ -374,7 +374,7 @@ shsfullUpdate(SHS_INFO *dig, BYTE *buffer, ULONG count)
 	    memcpy((char *)in, (char *)buffer, SHS_CHUNKSIZE);
 	    shsTransform(dig->digest, in);
 	} else {
-	    shsTransform(dig->digest, buffer);
+	    shsTransform(dig->digest, (ULONG *)buffer);
 	}
 #else /* MUST_ALIGN */
 	shsTransform(dig->digest, (ULONG *)buffer);
